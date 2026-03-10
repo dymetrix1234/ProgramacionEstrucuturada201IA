@@ -10,7 +10,9 @@ def contador_positivos():
 
     print(f"Cantidad de números positivos ingresados: {contador}")
 
-#definicion de la funcion main (controla el flujo del programa)
+'''
+definicion de la funcion main (controla el flujo del programa)
+'''
 
 def main():
     print("bienvenido al contador de números positivos")
