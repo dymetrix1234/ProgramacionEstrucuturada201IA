@@ -27,6 +27,8 @@ def operadores_aritmeticos():
     print("Modulo:", modulo)
     print("Potenciacion:", potencicacion)
 
-main = operadores_aritmeticos()
+def main():
+    operadores_aritmeticos()
+
 if __name__ == "__main__":
     main()
