@@ -77,3 +77,38 @@ def cargar_y_procesar(nombre_archivo):
 
 if __name__ == "__main__":
     main()
+
+
+#Módulo de clasificación de píxeles para análisis de imágenes.
+#Este módulo proporciona funcionalidades para cargar datos de sensores desde un archivo,
+#normalizar los valores de intensidad de píxeles y clasificarlos en categorías basadas
+#en umbrales predefinidos.
+#Constantes:
+#    UMBRAL_BAJO (float): Umbral inferior para clasificación de píxeles (0.3)
+#    UMBRAL_ALTO (float): Umbral superior para clasificación de píxeles (0.7)
+#Funciones:
+#    main(): Función principal que inicia el proceso de carga y procesamiento
+#    clasificar_pixel(intensidad: float) -> str | None:
+#        Clasifica un píxel según su intensidad en las categorías:
+#        - "Fondo oscuro": intensidad entre 0.0 y UMBRAL_BAJO
+#        - "Gris (Ruido)": intensidad entre UMBRAL_BAJO y UMBRAL_ALTO
+#        - "Objeto (brillante)": intensidad >= UMBRAL_ALTO
+#        - None: si la intensidad está fuera del rango [0.0, 1.0]
+#        Args:
+#            intensidad (float): Valor de intensidad del píxel (0.0 a 1.0)
+#        Returns:
+#            str | None: Clasificación del píxel o None si es inválido
+#    cargar_y_procesar(nombre_archivo: str) -> None:
+#        Carga datos de un archivo de sensores, clasifica cada píxel y genera
+#        estadísticas de clasificación. Maneja errores de archivo no encontrado.
+#        Args:
+#            nombre_archivo (str): Nombre del archivo a procesar
+#        Imprime:
+#            - Cantidad de ruido detectado (valores inválidos)
+#            - Cantidad de píxeles de fondo oscuro
+#            - Cantidad de píxeles grises (ruido)
+#            - Cantidad de píxeles brillantes (objetos)
+#Clasificación por funciones:
+#     main() - PUNTO DE ENTRADA
+#     clasificar_pixel() - LÓGICA DE CLASIFICACIÓN
+#     cargar_y_procesar() - E/S Y PROCESAMIENTO
