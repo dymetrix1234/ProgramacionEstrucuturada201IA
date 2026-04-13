@@ -22,15 +22,15 @@ def clasificar_pixel(intensidad):
     
     #Clasificacion del pixel
     if 0.0 <= intensidad <= UMBRAL_BAJO:
-        return print("Fodo oscuro")
+        return("Fodo oscuro")
 
     if UMBRAL_BAJO < intensidad < UMBRAL_ALTO:
-        return print("Gris (Ruido)")
+        return("Gris (Ruido)")
 
     if intensidad >= UMBRAL_ALTO:
-        return print("Objeto (brillante):")
+        return("Objeto (brillante)")
 
-    print("Analisis de imagen finalizado.")
+    return("Analisis de imagen finalizado.")
 
 import os
 
