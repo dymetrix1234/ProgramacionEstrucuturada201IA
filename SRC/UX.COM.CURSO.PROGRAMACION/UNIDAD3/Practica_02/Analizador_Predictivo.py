@@ -44,11 +44,22 @@ def obtener_estadisticas(lista_datos):
 	return (maximo, minimo, promedio)
 
 def generar_reporte(total_datos, validos, estadisticas):
- """
- FUNCIÓN 4: Imprime un resumen formateado de los resultados.
- """
- # IMPLEMENTAR AQUÍ
- pass
+	"""
+	FUNCIÓN 4: Imprime un resumen formateado de los resultados.
+	"""
+	v_max, vmin, promedio = estadisticas
+	descartados = total_datos - validos
+
+	print("*" * 30)
+	print("REPORTE DE ANÁLISIS PREDICTIVO")
+	print("*" * 30)
+	print(f"Total de lecturas: {total_datos}")
+	print(f"Lecturas válidas: {validos}")
+	print(f"Lecturas descartadas: {descartados}")
+	print(f"Valor máximo: {v_max:.2f}")
+	print(f"Valor mínimo: {vmin:.2f}")
+	print(f"Promedio: {promedio:.2f}")
+	print("*" * 30)
 # --- LÓGICA PRINCIPAL (NO MODIFICAR ESTA PARTE) ---
 def ejecutar_pipeline():
 	datos_finales = []
