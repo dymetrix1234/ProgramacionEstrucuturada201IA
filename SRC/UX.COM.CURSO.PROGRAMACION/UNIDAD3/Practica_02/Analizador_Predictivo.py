@@ -30,12 +30,18 @@ def calcular_alerta(valor_normalizado):
 	else:
 		return "NORMAL"
 def obtener_estadisticas(lista_datos):
- """
- FUNCIÓN 3: Recibe la lista de datos válidos.
- Devuelve una TUPLA con: (Valor máximo, Valor mínimo, Promedio).
- """
- # IMPLEMENTAR AQUÍ
- pass
+	"""
+	FUNCIÓN 3: Recibe la lista de datos válidos.
+	Devuelve una TUPLA con: (Valor máximo, Valor mínimo, Promedio).
+	"""
+	if not lista_datos:
+		return (0, 0, 0)
+
+	maximo = max(lista_datos)
+	minimo = min(lista_datos)
+	promedio = sum(lista_datos) / len(lista_datos)
+
+	return (maximo, minimo, promedio)
 
 def generar_reporte(total_datos, validos, estadisticas):
  """
