@@ -25,10 +25,10 @@ def procesar_pregunta(mensaje_usuario):
         "return": "Es la forma en que la función te entrega el resultado de su trabajo.",
         
     #Conceptos de programacion estructurada
-        "programacion estructurada": "Es un paradigma de programacion que se basa en la division del programa en bloques o modulos, utilizando estructuras de control como if, for, while, y funciones para organizar el codigo de manera clara y facil de entender"
-        "Secuencia: Las instrucciones se ejecutan una tras otra en el orden en que aparecen"
-        "Selección (Estructuras condicionales): Permite elegir entre dos o más caminos dependiendo de una condición"
-        "Iteración (Bucles): Permite repetir un bloque de código mientras se cumpla una condición o para cada elemento en una colección"
+        "programacion estructurada": "Es un paradigma de programacion que se basa en la division del programa en bloques o modulos, utilizando estructuras de control como if, for, while, y funciones para organizar el codigo de manera clara y facil de entender",
+        "secuencia": "Las instrucciones se ejecutan una tras otra en el orden en que aparecen",
+        "selección": "Permite elegir entre dos o más caminos dependiendo de una condición",
+        "iteración": "Permite repetir un bloque de código mientras se cumpla una condición o para cada elemento en una colección",
         
     }
     #3.- Logica de busqueda
@@ -53,6 +53,6 @@ def main():
         print("Respuesta:", respuesta)
     
     
-#prueba locar (offline)
-if _name_ == "_main_":
+#prueba local (offline)
+if __name__ == "__main__":
     main()
