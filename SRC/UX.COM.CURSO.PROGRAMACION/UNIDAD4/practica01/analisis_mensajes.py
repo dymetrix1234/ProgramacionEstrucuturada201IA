@@ -31,3 +31,15 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    #AL NO PONER EL IMPORT AL INICIO, SALTA EL SIGUIENTE ERROR:
+        #M.CURSO.PROGRAMACION\UNIDAD4\practica01\analisis_mensajes.py", line 33, in <module>
+        #main()
+        #~~~~^^
+    #File "c:\Users\Dymet\OneDrive\Documentos\ProgramacionEstrucuturada201IA\SRC\UX.COM.CURSO.PROGRAMACION\UNIDAD4\practica01\analisis_mensajes.py", line 25, in main
+        #prom, maximo, ds, mediana = procesar_estadisticas(datos_servidor)
+                                    #~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+    #File "c:\Users\Dymet\OneDrive\Documentos\ProgramacionEstrucuturada201IA\SRC\UX.COM.CURSO.PROGRAMACION\UNIDAD4\practica01\analisis_mensajes.py", line 11, in procesar_estadisticas
+        #promedio = np.mean(lista_mensajes)
+                #^^
+    #NameError: name 'np' is not defined
