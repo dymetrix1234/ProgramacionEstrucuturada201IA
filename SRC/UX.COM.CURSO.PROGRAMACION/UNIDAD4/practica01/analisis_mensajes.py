@@ -1,1 +1,1 @@
-#funciones externas (bibliotecas)
+print("funciones externas (bibliotecas)")
